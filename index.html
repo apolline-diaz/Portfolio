@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Apolline Diaz</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Apolline Diaz</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./assets/profile-pic.png" alt="Apolline Diaz profile picture"/>
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello, I'm</p>
+            <h1 class="title">Apolline Diaz</h1>
+            <p class="section_text_p2">Frontend Developer</p>
+            <div class="btn-container">
+                <button
+                    class="btn btn-color-2" 
+                    onclick="window.open('./assets/resume-example.pdf')"
+                >
+                    Download CV
+                </button>
+                <button
+                    class="btn btn-color-1" 
+                    onclick="location.href('./#contact')"
+                >
+                    Contact Info
+                </button>                    
+                </div>
+                <div id="socials-container">
+                    <img 
+                    src="./assets/linkedin.png" 
+                    alt="My LinkedIn profile"
+                    class="icon" 
+                    onclick="location.href='https://linkedin.com/apolline-diaz'"
+                    />
+                    <img 
+                    src="./assets/github.png" 
+                    alt="My Github profile"
+                    class="icon" 
+                    onclick="location.href='https://github.com/apolline-diaz'"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section_text_p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section_about_pic-container">
+                <img 
+                src="./assets/about-pic.png" 
+                alt="Profile picture" 
+                class="about-pic"
+                />
+                </div>
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <img 
+                            src="./assets/experience.png" 
+                            alt="Experience icon" 
+                            class="icon"
+                            />
+                            <h3>Experience</h3>
+                            <p>3 ans +<br>- Assistante de direction et chargée des actions Jeune Public<br>- Projectionniste<br>- Programmatrice indépendante</p>
+                        </div>
+                        <div class="details-container">
+                            <img 
+                            src="./assets/education.png" 
+                            alt="Education icon" 
+                            class="icon"
+                            />
+                            <h3>Education</h3>
+                            <p>- Titre RNCP Concepteur développeur web et applis mobiles<br>- Master 2 Recherche Cinéma-Audiovisuel</p>
+                        </div>
+                    </div>
+                <div class="text-container">
+                    <p>Après avoir travaillé dans les salles de cinéma, j'apprends aujourd'hui le développement web à l'école Ada Tech School. Passionnée par la création audiovisuelle et plus largement multimédia (cinéma, séries, art vidéo, animation 3D), le web est devenu un nouveau domaine à explorer pour moi.
+                        Je développe ainsi des projets en mettant l'accent sur la conception du design.
+                        <br/><br/> 
+                        Je suis en recherche d'alternance, en front-end, au rythme de 4 jours en entreprise (et le vendredi en formation), pour une durée de 12 mois à partir du 7 juin.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img 
+        src="./assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#experience'"
+        />
+    </section>
+    <section id="experience">
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Basics</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Basics</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basics</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>React</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Figma</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>MySQL</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Node JS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Express JS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Git</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img 
+            src="./assets/arrow.png" 
+            alt="Arrow icon" 
+            class="icon arrow" 
+            onclick="location.href='./#projects'"
+        />
+    </section>
+    <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-project-container color-container">
+                    <div class="article-container">
+                        <img 
+                            src="./assets/project-movie-website.png" 
+                            alt="Project Movie Website" 
+                            class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Movie Website</h2>
+                    <h3 class="experience-sub-title project-subtitle">HTML, CSS, Javascript, API.</h3>
+                    <p class="experience-sub-title project-paragraph">PROJET EN COURS<br/>Site web de référencement mettant en avant l'actualité des films, les sorties prochaines, les tendances du moment, avec une option de recherche. Utilisation de l'API de The Movie Database. Projet personnel en développement. </p>
+                    <div class="btn-container">
+                        <button 
+                            class="btn btn-color-2 project-btn" 
+                            onclick="location.href='https://github.com/apolline-diaz/Search-Movie-App'"
+                        >
+                                Github
+                        </button>
+                        <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/apolline-diaz/Search-Movie-App'"
+                        >
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-project-container color-container">
+                    <div class="article-container">
+                        <img 
+                            src="./assets/project-plateforme.png" 
+                            alt="Project Plateforme" 
+                            class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Plateforme e-commerce</h2>
+                    <h3 class="experience-sub-title project-subtitle">HTML, CSS, Javascript, React JS, Node JS Express, MySQL, Sequelize.</h3>
+                    <p class="experience-sub-title project-paragraph">Plateforme de vente en ligne de meubles d'occasion, avec une base de données. Développé en collectif, en 1 semaine.</p>
+                    <div class="btn-container">
+                        <button 
+                            class="btn btn-color-2 project-btn" 
+                            onclick="location.href='https://github.com/apolline-diaz/E-Shop-Website-Second-hand-furniture-Adopteunmeuble'"
+                        >
+                                Github
+                        </button>
+                        <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/apolline-diaz/E-Shop-Website-Second-hand-furniture-Adopteunmeuble'"
+                        >
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-project-container color-container">
+                    <div class="article-container">
+                        <img 
+                            src="./assets/project-extension.png" 
+                            alt="Project Extension" 
+                            class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Chrome Extension</h2>
+                    <h3 class="experience-sub-title project-subtitle">HTML, CSS, Javascript, API.</h3>
+                    <p class="experience-sub-title project-paragraph">Extension Chrome offrant la possibilité de transformer son espace "Nouvel onglet" avec l'univers du studio Ghibli, avec des fonctionnalités supplémentires. Développé en collectif, en 10 jours.</p>
+                    <div class="btn-container">
+                        <button 
+                            class="btn btn-color-2 project-btn" 
+                            onclick="location.href='https://github.com/apolline-diaz/Ghibli-New-Tab-Browser-Extension'"
+                        >
+                                Github
+                        </button>
+                        <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com'"
+                        >
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-project-container color-container">
+                    <div class="article-container">
+                        <img 
+                            src="./assets/project-datavisualisation.png" 
+                            alt="Project Datavisualisation" 
+                            class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Datavisualisation</h2>
+                    <h3 class="experience-sub-title project-subtitle">HTML, Javascript, CSS, API.</h3>
+                    <p class="experience-sub-title project-paragraph">Datavisualisation sur la production d'électricité des pays en Europe, avec comparatif, à partir de l'API Electronicity Maps. Projet développé en collectif, en 1 semaine.</p>
+                    <div class="btn-container">
+                        <button 
+                            class="btn btn-color-2 project-btn" 
+                            onclick="location.href='https://github.com/apolline-diaz/Datavisualisation-API-Electricity-Maps'"
+                        >
+                                Github
+                        </button>
+                        <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/apolline-diaz/Datavisualisation-API-Electricity-Maps'"
+                        >
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-project-container color-container">
+                    <div class="article-container">
+                        <img 
+                            src="./assets/project-pico.png" 
+                            alt="Project Pico" 
+                            class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Jeu vidéo Pico 8</h2>
+                    <h3 class="experience-sub-title project-subtitle">Lua.</h3>
+                    <p class="experience-sub-title project-paragraph">Ebauche de jeu vidéo de plateforme sur la console imaginaire Pico 8. Un citron doit récupérer des fruits et éviter les attaques de vers de terre. Développé en collectif, en 10 jours.</p>
+                    <div class="btn-container">
+                        <button 
+                            class="btn btn-color-2 project-btn" 
+                            onclick="location.href='https://github.com/apolline-diaz/Pico-8-Video-game'"
+                        >
+                                Github
+                        </button>
+                        <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/apolline-diaz/Pico-8-Video-game'"
+                        >
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <img 
+            src="./assets/arrow.png" 
+            alt="Arrow icon" 
+            class="icon arrow" 
+            onclick="location.href='./#projects'"
+        />
+    </section>
+    <section id="contact">
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img 
+                    src="./assets/email.png" 
+                    alt="Email icon" 
+                    class="icon"
+                />
+                <p><a href="mailto:example@gmail.com">example@gmail.com</a>
+                </p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                    src="./assets/linkedin.png" 
+                    alt="LinkedIn icon" 
+                    class="icon contact-icon email-icon"
+                />
+                <p><a href="https://www.linkedin.com">LinkedIn</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
