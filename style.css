@@ -107,6 +107,7 @@ a:hover{
     height: 24px;
     width: 30px;
     cursor: pointer;
+    object-fit: cover;
 }
 
 .hamburger-icon span{
@@ -120,7 +121,6 @@ a:hover{
     position:absolute;
     top: 100%;
     right: 0;
-    backdrop-filter: blur(20px);    
     width: fit-content;
     max-height: 0;
     overflow: hidden;
@@ -207,8 +207,8 @@ section{
 }
 
 .section_pic-container img{
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     border-radius: 50%;
     object-fit: cover;
     margin: auto 0;
@@ -294,7 +294,7 @@ section{
 
 .btn-color-1,
 .btn-color-2:hover{
-    background: rgba(0, 0, 0, 0.75);
+    background: rgb(0, 0, 0);
     color: white;
 }
 
@@ -381,7 +381,7 @@ section{
     font-size: 1.5rem;
     margin-bottom: 2rem;
     line-height: 1.5;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 .experience-details-container{
@@ -471,8 +471,8 @@ section{
 
 .slide img{
     height: 100vh;
+    width: 100%;
     object-fit: contain;
-    object-fit: cover;
 }
 
 .navigation-manual{
