@@ -8,6 +8,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -379,7 +380,6 @@ section{
     color: rgb(0, 0, 0);
     font-weight: 600;
     font-size: 1.5rem;
-    margin-bottom: 2rem;
     line-height: 1.5;
     /* text-align: justify; */
 }
@@ -391,22 +391,57 @@ section{
     flex-direction: column;
 }
 
+/* Activités multimédia*/
+
+.details-other-container{
+    flex: 1;
+    border-bottom: black solid 1px;
+    text-align: center;
+}
+
+.details-other-container p{
+    line-height: 1.5;
+}
+
+.details-other-container p span{
+    margin: 1rem;
+    font-weight: bold;
+}
+
+.details-other-container .portfolio-link{
+    font-family: "Playfair Display";
+    font-style: italic;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(172, 4, 135);
+    transition: width 0.25s ease-out;
+}
+
+.details-other-container .portfolio-link:hover{
+    cursor: pointer;
+    color: rgb(172, 4, 135);
+}
+
+/* PROJECTS SECTION  */
+
 .skills-container{
     align-items: center;
     justify-content: center;
     display: flex;
-    flex-direction: column;
     line-height: 1;
+    flex-direction: column;
 }
 
 .skills-details-container{
     display: flex;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 3rem;
     align-items: center;
-
+    border: black solid 1px;
     /* flex-wrap: wrap;
     gap: 1.5rem; */
     /* justify-content: center; */
-    flex-direction: column;
 }
 
 .skills-sub-title{
@@ -418,10 +453,9 @@ section{
     /* justify-content: center; */
 }
 
-/* PROJECTS SECTION  */
-
 #projects{
     position: relative;
+    margin: 5rem;
 }
 
 .project-containers{
@@ -445,12 +479,14 @@ section{
     /* background: rgb(250, 250, 250); */
 }
 
-.project-img{
+.details-project-container .project-img{
     width: 100%;
-    height: 100%;
+    object-fit: contain;
+    margin: 0;
+    padding: 0;
 }
 
-.slider{
+/* .slider{
     overflow: hidden;
 }
 
@@ -513,7 +549,7 @@ section{
 
 #radio4:checked ~ .first{
     margin-left: -60%;
-}
+} */
 
 
 .project-title{
