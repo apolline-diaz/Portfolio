@@ -317,9 +317,9 @@ section{
 
 /* ABOUT SECTION  */
 
-#about{
+/* #about{
     position: relative;
-}
+} */
 
 .about-containers{
     gap:2rem;
@@ -372,9 +372,9 @@ section{
 
 /* EXPERIENCE SECTION  */
 
-#experience{
+/* #experience{
     position: relative;
-}
+} */
 
 .experience-sub-title{
     color: rgb(0, 0, 0);
@@ -454,7 +454,7 @@ section{
 }
 
 #projects{
-    position: relative;
+    /* position: relative; */
     margin: 5rem;
 }
 
@@ -511,11 +511,12 @@ section{
 /* CONTACT */
 
 #contact{
-    position: relative;
+    /* position: relative; */
     display: flex;
     justify-content: center;
     flex-direction: column;
     height: 70vh;
+    overflow: hidden;
 }
 
 .contact-info-upper-container{
