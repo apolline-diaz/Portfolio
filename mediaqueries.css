@@ -101,5 +101,10 @@
     .text-container{
         text-align: justify;
     }
+    .project-details-container {
+        max-height: 500px; 
+        overflow-y: scroll; 
+      }
+      
 }
 
